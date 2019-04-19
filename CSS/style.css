@@ -1,0 +1,43 @@
+
+body{
+    background-color: rgb(30, 39, 28);
+    color: white;
+	font-family: sans-serif;
+}
+header{
+    background: rgb(40, 43, 40);
+    color: white;
+}
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .header a{
+        /* こっちは下線 */
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .header h1 {
+        /* 左に揃えたい場合は右の余白をautoで設定する */
+        margin-right: auto;
+        font-size: 1.8rem;
+        margin-left: 1.0rem;
+    }
+    .header ul {
+        /* これがないと１段目のみでflexboxを行うためul以下が縦並びになってしまう */
+        display: flex;
+        margin-right: 1.0rem;
+    }
+    .header li {
+        margin-left: 3rem;
+        /* こっちは・を消す */
+        list-style-type: none;
+        padding: 1rem;
+    }
+    .header li :hover {
+        /* ホバー時に背景を明るく */
+        background-color: #8cae47;
+        padding: 1rem;
+        border-radius: 4px;
+    }
