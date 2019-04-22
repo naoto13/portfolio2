@@ -1,9 +1,25 @@
 
+Color {
+    color: rgb(22, 168, 22)
+    rgb(1, 10, 1)
+    rgb(40, 43, 40)
+}
+
+.green{
+    color: rgb(22, 168, 22);
+}
+
 body{
     background-color: rgb(30, 39, 28);
     color: white;
 	font-family: sans-serif;
 }
+.title h2{
+    margin-top: 10%;
+}
+
+
+/* header */
 header{
     background: rgb(40, 43, 40);
     color: white;
@@ -37,7 +53,95 @@ header{
     }
     .header li :hover {
         /* ホバー時に背景を明るく */
-        background-color: #8cae47;
+        background-color:rgb(22, 168, 22);
         padding: 1rem;
         border-radius: 4px;
     }
+
+/* main */
+main{
+    width:100%;
+    height:400px;
+    background: rgb(1, 10, 1);
+    color: white;
+    position: relative;
+}
+    main .text{
+        position: absolute;
+        top: 30%;
+        right: 23%;
+        text-align: center;
+    }
+    main h2{
+        font-size: 4rem;
+    }
+    main p{
+        font-size: 2rem;
+    }
+    main .green{
+        color: rgb(22, 168, 22);
+    }
+
+/* about */
+.about{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+    .about ul{
+        list-style-type: none;
+    }
+    .about .left{
+        max-width: 45%;
+        float: left;
+        margin: 5%;
+        text-align: start;
+    }
+    .about .right{
+        max-width: 45%;
+        float: left;
+        margin: 5%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+/* personality */
+.personality{
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    background: rgb(1, 10, 1)
+}
+.personality .merit{
+    width: 65%;
+    margin: 0 auto;
+}
+.personality h3{
+    margin-top: 6%;
+    margin-bottom: 1%;
+    font-size: 1.5rem;
+    color: rgb(22, 168, 22);
+}
+.personality h4{
+    margin-top: 10%;
+    font-size: 1.5rem;
+}
+
+/*  Portfolio  */
+.portfolio{
+    text-align: center;
+    overflow: hidden;
+    min-height: 400px;
+    background: rgb(22, 168, 22);
+}
+
+/*  footer  */
+footer{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    background: rgb(40, 43, 40);
+}
