@@ -169,3 +169,24 @@
     opacity: 0.6;
     display: block;
 }
+.slider .prev{
+    background-color: rgba(19, 18, 18);
+    color: white;
+    width: 60px;
+    height: 40px;
+    padding-top: 20px;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+}
+.slider .next{
+    background-color: rgba(19, 18, 18);
+    color: white;
+    width: 60px;
+    height: 40px;
+    padding-top: 20px;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
