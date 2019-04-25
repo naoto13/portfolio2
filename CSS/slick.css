@@ -122,7 +122,7 @@
 }
 /* slider */
 .slider{
-    margin: 100px auto;
+    margin: 30px auto;
     width: 80%;
 }
 .slide{
@@ -189,4 +189,11 @@
     position: absolute;
     top: 50%;
     right: 0%;
+}
+.thumbnail{
+margin: 2% 10% 0 20%;
+}
+.thumbnail-image{
+    height: 100px;
+    width: auto;
 }
