@@ -149,6 +149,7 @@ main{
     overflow: hidden;
     min-height: 400px;
     background: rgb(22, 168, 22);
+    padding-bottom: 50px;
 }
 
 /*  footer  */

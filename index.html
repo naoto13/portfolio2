@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/animate.css">
+    <!-- <link href="js/slick.css" rel="stylesheet" type="text/css"> -->
+    <link href="CSS/slick.css" rel="stylesheet" type="text/css">
+    <link href="CSS/slick-theme.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -144,14 +147,33 @@
 <!-- Portfolio -->
 <div class="portfolio title">
     <h2>Portfolio</h2>
-
-    <!-- カルーセル埋め込み予定 -->
-
-    <ul>
-        <li>HTML/CSS</li>
-        <li>Bootstrap</li>
-        <li>Javascript/PHP</li>
-        <li>Vue.js</li>
+    <ul class="slider">
+         <li class="slide">
+            <a class="slide__link color-filter-base" href="http://portfolio.marucoblog.com/">
+                 <img src="image/portfolio-LP.png" alt="LP-image" class="color-filter-image">
+                  <span class="slide__content-wrap">
+                      <span class="slide__content">
+                          <h2 class="slide__title">HTML/CSS/Bootstrap</h2>
+                          <p class="slide__text">
+                          これはHTML/CSS/Bootstrapを用いたLPサイトです。
+                          </p>
+                      </span>
+                  </span>
+              </a>
+         </li>
+        <li class="slide">
+                <a class="slide__link color-filter-base" href="http://eggbook.marucoblog.com/index.php">
+                <img src="image/Eggbook.png" alt="Service-image" class="color-filter-image">
+                    <span class="slide__content-wrap">
+                        <span class="slide__content">
+                            <h2 class="slide__title">HTML/CSS/js/PHP</h2>
+                            <p class="slide__text">
+                                これはHTML/CSS/js/PHPを用いたWebサービスです。
+                            </p>
+                        </span>
+                    </span>
+                </a>
+        </li>
     </ul>
 </div>
 
@@ -166,7 +188,25 @@
     </ul>
     Copyright <a href="index.html">ホームページ</a>. All Rights Reserved.
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="JS/slick.min.js"></script>
 
-<script src="JS/script.js"></script>
+<script type="text/javascript">
+$('.slider').on('init',function(){
+    $('.slide__content').addClass('on');
+});
+$('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:5000,
+    dots:true,
+});
+$('.slider').on('beforeChange',function(){
+    $('.slide__content').removeClass('on');
+});
+$('.slider').on('afterChange',function(){
+    $('.slide__content').addClass('on');
+});
+</script>
+
 </body>
 </html>
