@@ -82,7 +82,7 @@ main{
         color: rgb(22, 168, 22);
     }
 
-/* about */
+/* Skills */
 .about{
     text-align: center;
     margin-top: 5%;
@@ -143,13 +143,21 @@ main{
     font-size: 1.5rem;
 }
 
-/*  Portfolio  */
 .portfolio{
     text-align: center;
     overflow: hidden;
     min-height: 400px;
     background: rgb(22, 168, 22);
     padding-bottom: 50px;
+}
+
+.about .link{
+    text-decoration: none;
+    color: white;
+}
+.about .link:hover{
+    text-decoration: underline;
+    color: blue;
 }
 
 /*  footer  */
