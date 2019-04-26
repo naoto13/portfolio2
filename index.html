@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/animate.css">
-    <!-- <link href="js/slick.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- カルーセルプラグイン（slick） -->
     <link href="CSS/slick.css" rel="stylesheet" type="text/css">
     <link href="CSS/slick-theme.css" rel="stylesheet" type="text/css">
 </head>
@@ -200,15 +201,22 @@
 
 <!-- footer -->
 <footer>
-    <div>Contact Me</div>
-    <p>yamaura777@gmail.com</p>
-    <ul>
-        <li>Wantedly</li>
-        <li>Twitter</li>
-        <li>Github</li>
-    </ul>
-    Copyright <a href="index.html">ホームページ</a>. All Rights Reserved.
+    <div class="contact">
+        <p class="title">Contact Me</p>
+        <p>yamaura777@gmail.com</p>
+    </div>
+
+    <div id="social-icon" class="clear">
+        <a href="#"><i class="fab fa-weebly fa-lg"></i>Wantedly</a>
+        <a href="#"><i class="fab fa-github fa-lg"></i>Github</a>
+        <a href="#"><i class="fab fa-twitter fa-lg"></i>twitter</a>
+    </div>
+
+    <div class="copyright">
+        Copyright <a href="index.html">My Portfolio</a>. All Rights Reserved.
+    </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 <script type="text/javascript" src="JS/slick.min.js"></script>
 
@@ -216,6 +224,7 @@
 $('.slider').on('init',function(){
     $('.slide__content').addClass('on');
 });
+
 $('.slider').slick({
     asNavFor:'.thumbnail',
     autoplay:true,

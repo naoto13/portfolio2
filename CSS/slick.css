@@ -193,6 +193,7 @@
 .thumbnail{
 margin: 2% 10% 0 20%;
 }
+/* 縦横比固定して縮小 */
 .thumbnail-image{
     height: 100px;
     width: auto;

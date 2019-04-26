@@ -159,4 +159,57 @@ footer{
     margin-bottom: 5%;
     overflow: hidden;
     background: rgb(40, 43, 40);
+    text-decoration: none;
 }
+footer .contact{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10%;
+}
+footer .contact .title{
+    font-size: 2rem;
+}
+#social-icon{
+    margin: 0 25% 2% 25%;
+}
+#social-icon a {
+    position: relative;
+    display: block;
+    float: left;
+    width:100px;
+    margin: 0 10px 10px 0;
+    padding: 0 0 0 40px;
+    background: rgb(22, 168, 22);
+    color: #fff;
+    text-decoration: none;
+    text-align:center;
+    line-height: 40px;
+  }
+  #social-icon i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background:  rgb(22, 168, 22);
+    line-height: 40px;
+    text-align: center;
+  }
+  #social-icon i:before {
+      padding: 0px;
+      line-height:40px ;}
+  #social-icon a:hover i {
+      background:  rgb(22, 168, 22);
+    }
+  .clear{
+      overflow: hidden;
+  }
+  .copyright a{
+      text-decoration: none;
+      color: #fff;
+  }
+  .copyright a:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
